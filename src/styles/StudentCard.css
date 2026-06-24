@@ -1,0 +1,161 @@
+.student-card {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.student-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(212, 175, 55, 0.3);
+  border-color: #ffd700;
+}
+
+.card-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.student-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  color: #d4af37;
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.info-item .label {
+  font-size: 12px;
+  color: #d4af37;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-item .value {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.talents {
+  margin-bottom: 15px;
+}
+
+.talents-label {
+  font-size: 12px;
+  color: #d4af37;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  margin: 0;
+}
+
+.talent-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.talent-tag {
+  background-color: #d4af37;
+  color: #000;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.video-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #d4af37;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.video-button:hover {
+  background-color: #ffd700;
+  transform: scale(1.02);
+}
+
+.video-container {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #d4af37;
+}
+
+.contact {
+  padding-top: 15px;
+  border-top: 1px solid #444;
+  margin-top: 15px;
+}
+
+.contact-label {
+  font-size: 12px;
+  color: #d4af37;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+
+.contact-info {
+  font-size: 13px;
+  color: #ccc;
+  margin: 0;
+  word-break: break-all;
+}
+
+@media (max-width: 768px) {
+  .student-card {
+    border-width: 1px;
+  }
+
+  .card-image {
+    height: 300px;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-content h3 {
+    font-size: 18px;
+  }
+}
