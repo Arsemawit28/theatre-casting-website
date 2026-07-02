@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Theatre Arts Students — Class of 2026 (Preview)</title>
+  <meta name="description" content="Preview of the Theatre Arts Students casting portfolio (static mockup)." />
+  <style>
+    :root{--bg1:#1a1a1a;--bg2:#2d1b2e;--accent:#d4af37;--muted:#bdbdbd}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(135deg,var(--bg1) 0%,var(--bg2) 100%);color:#fff;}
+    .container{max-width:1200px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:24px 0}
+    header h1{margin:0;font-size:26px;letter-spacing:0.5px}
+    .tagline{color:var(--muted);margin:4px 0 0;font-size:14px}
+
+    .search-row{display:flex;gap:12px;margin:18px 0;flex-wrap:wrap}
+    .search-row input,.search-row select{padding:10px 12px;border-radius:8px;border:1px solid rgba(212,175,55,0.15);background:rgba(0,0,0,0.35);color:#fff;min-width:200px}
+
+    .results-info{color:var(--muted);margin-bottom:12px}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.15));border:1px solid rgba(212,175,55,0.08);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+    .card img{width:100%;height:auto;display:block;aspect-ratio:3/4;object-fit:cover}
+    .card-content{padding:14px}
+    .card-content h3{margin:0 0 8px;font-size:18px}
+    .info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:10px}
+    .label{color:var(--muted);font-size:13px}
+    .value{font-weight:600}
+    .talent-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+    .talent-tag{background:rgba(212,175,55,0.12);color:var(--accent);padding:6px 8px;border-radius:999px;font-size:12px}
+    .video-button{margin-top:10px;padding:8px 10px;background:linear-gradient(90deg,var(--accent),#e0b84a);border:none;border-radius:8px;color:#000;font-weight:700;cursor:pointer}
+    .video-button[disabled]{opacity:0.5;cursor:not-allowed}
+    .contact{margin-top:10px}
+    .contact a{color:var(--accent);text-decoration:none}
+
+    .video-frame{margin-top:12px;border-radius:8px;overflow:hidden}
+
+    footer{border-top:3px solid var(--accent);text-align:center;padding:22px;margin-top:28px;color:var(--accent)}
+
+    @media (max-width:1000px){.gallery{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){.gallery{grid-template-columns:1fr}.search-row{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Theatre Arts Students</h1>
+        <div class="tagline">Class of 2026 — Casting Portfolio (Preview)</div>
+      </div>
+      <div style="text-align:right;color:var(--muted);font-size:13px">Preview — example data only</div>
+    </header>
+
+    <div class="search-row">
+      <input placeholder="Search by name..." disabled />
+      <select disabled><option>All Talents</option></select>
+    </div>
+
+    <div class="results-info">Showing 5 of 5 students</div>
+
+    <div class="gallery">
+      <!-- Card 1 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&h=800&fit=crop" alt="Amina Bekele">
+        <div class="card-content">
+          <h3>Amina Bekele</h3>
+          <div class="info-grid">
+            <div><div class="label">Age</div><div class="value">19</div></div>
+            <div><div class="label">Height</div><div class="value">5'6"</div></div>
+            <div><div class="label">Hair</div><div class="value">Black</div></div>
+            <div><div class="label">Eyes</div><div class="value">Brown</div></div>
+          </div>
+          <div class="talents"><div class="label">Talents</div><div class="talent-tags"><span class="talent-tag">Acting</span><span class="talent-tag">Singing</span></div></div>
+          <button class="video-button" onclick="document.getElementById('v1').style.display='block'">▶ Watch Demo</button>
+          <div id="v1" class="video-frame" style="display:none">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="contact">Contact: <a href="mailto:amina.bekele@example.com">amina.bekele@example.com</a></div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=800&fit=crop" alt="Daniel Tesfaye">
+        <div class="card-content">
+          <h3>Daniel Tesfaye</h3>
+          <div class="info-grid">
+            <div><div class="label">Age</div><div class="value">20</div></div>
+            <div><div class="label">Height</div><div class="value">5'10"</div></div>
+            <div><div class="label">Hair</div><div class="value">Brown</div></div>
+            <div><div class="label">Eyes</div><div class="value">Hazel</div></div>
+          </div>
+          <div class="talents"><div class="label">Talents</div><div class="talent-tags"><span class="talent-tag">Dancing</span><span class="talent-tag">Acting</span></div></div>
+          <button class="video-button" onclick="document.getElementById('v2').style.display='block'">▶ Watch Demo</button>
+          <div id="v2" class="video-frame" style="display:none">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="contact">Contact: <a href="mailto:daniel.t@example.com">daniel.t@example.com</a></div>
+        </div>
+      </article>
+
+      <!-- Card 3 (no video) -->
+      <article class="card">
+        <img src="https://via.placeholder.com/300x400?text=Lily+Mengistu" alt="Lily Mengistu">
+        <div class="card-content">
+          <h3>Lily Mengistu</h3>
+          <div class="info-grid">
+            <div><div class="label">Age</div><div class="value">18</div></div>
+            <div><div class="label">Height</div><div class="value">5'4"</div></div>
+            <div><div class="label">Hair</div><div class="value">Blonde</div></div>
+            <div><div class="label">Eyes</div><div class="value">Blue</div></div>
+          </div>
+          <div class="talents"><div class="label">Talents</div><div class="talent-tags"><span class="talent-tag">Modeling</span><span class="talent-tag">Drawing</span></div></div>
+          <button class="video-button" disabled>▶ No Demo</button>
+          <div class="contact">Contact: <a href="mailto:lily.mengistu@example.com">lily.mengistu@example.com</a></div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1545996124-1b4b9d5b2e91?w=600&h=800&fit=crop" alt="Samuel Abebe">
+        <div class="card-content">
+          <h3>Samuel Abebe</h3>
+          <div class="info-grid">
+            <div><div class="label">Age</div><div class="value">21</div></div>
+            <div><div class="label">Height</div><div class="value">6'0"</div></div>
+            <div><div class="label">Hair</div><div class="value">Black</div></div>
+            <div><div class="label">Eyes</div><div class="value">Dark Brown</div></div>
+          </div>
+          <div class="talents"><div class="label">Talents</div><div class="talent-tags"><span class="talent-tag">Acting</span><span class="talent-tag">Writing</span><span class="talent-tag">Makeup</span></div></div>
+          <button class="video-button" onclick="document.getElementById('v4').style.display='block'">▶ Watch Demo</button>
+          <div id="v4" class="video-frame" style="display:none">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/oHg5SJYRHA0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="contact">Contact: <a href="mailto:samuel.abebe@example.com">samuel.abebe@example.com</a></div>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card">
+        <img src="https://via.placeholder.com/300x400?text=Martha+Kidane" alt="Martha Kidane">
+        <div class="card-content">
+          <h3>Martha Kidane</h3>
+          <div class="info-grid">
+            <div><div class="label">Age</div><div class="value">19</div></div>
+            <div><div class="label">Height</div><div class="value">5'7"</div></div>
+            <div><div class="label">Hair</div><div class="value">Brown</div></div>
+            <div><div class="label">Eyes</div><div class="value">Green</div></div>
+          </div>
+          <div class="talents"><div class="label">Talents</div><div class="talent-tags"><span class="talent-tag">Singing</span><span class="talent-tag">Dancing</span></div></div>
+          <button class="video-button" onclick="document.getElementById('v5').style.display='block'">▶ Watch Demo</button>
+          <div id="v5" class="video-frame" style="display:none">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="contact">Contact: <a href="mailto:martha.k@example.com">martha.k@example.com</a></div>
+        </div>
+      </article>
+
+    </div>
+
+    <footer>&copy; 2026 Theatre Arts Students — Class of 2026</footer>
+  </div>
+
+  <script>
+    // Simple toggle behavior so clicking the same button closes the frame
+    document.querySelectorAll('.video-button').forEach((btn, i) => {
+      btn.addEventListener('click', () => {
+        const id = ['v1','v2','v4','v5'][i] || null;
+        if (!id) return;
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+        window.scrollTo({top: el.offsetTop - 20, behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
